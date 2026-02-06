@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>딸깍 - 원클릭 입력 | SpecialWay</title>
+    <title>딸깍 - 입력 유틸리티 | 키보드 마우스 매크로 | 리니지 아이온2 디아블로</title>
+    <meta name="description" content="딸깍 - 키보드 매크로, 마우스 매크로, 좌표 클릭, 시퀀스 입력을 하나로. 리니지, 리니지클래식, 아이온2, 디아블로 등 PC 온라인게임에서 복잡한 입력을 원클릭으로 해결하는 입력 유틸리티.">
+    <meta name="keywords" content="매크로 프로그램, 키보드 매크로, 마우스 매크로, 게임 입력 도구, 리니지 매크로, 리니지클래식 매크로, 린클 매크로, 리클 매크로, 아이온 매크로, 아이온2 매크로, 리니지2 매크로, 디아블로 매크로, 디아블로2 매크로, 디아블로4 매크로, 디아2 매크로, 디아4 매크로, 클릭 매크로, 좌표 클릭, 단축키 프로그램, 리니지, 리니지클래식, 린클, 리클, 아이온, 아이온2, 디아블로, 디아블로2, 디아블로4, 디아2, 디아4, RPG, 온라인게임, PC온라인게임, 시퀀스, 오버레이 버튼, 입력 유틸리티, 딸깍">
+    <meta property="og:title" content="딸깍 - 원클릭 입력 유틸리티">
+    <meta property="og:description" content="키보드/마우스 입력 간소화, 시퀀스, 좌표 클릭. 리니지, 아이온2, 디아블로 등 PC 온라인게임 입력 유틸리티.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://딸깍.kr">
+    <meta name="google-site-verification" content="BNsVdVOXHAGBnHotdk1FoaSMnn88-Jd9KZlWrPO91FI" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -275,7 +282,7 @@
 
         .sponsor-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             max-width: 800px;
             margin: 0 auto;
@@ -373,6 +380,44 @@
             content: '✕';
             background: rgba(255,255,255,0.1);
             color: rgba(255,255,255,0.5);
+        }
+
+        .pricing-table {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .pricing-table h4 {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pricing-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .pricing-row:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-row .period {
+            font-size: 16px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .pricing-row .amount {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--secondary);
         }
 
         .sponsor-note {
@@ -746,8 +791,8 @@
                 <div class="use-case-card">
                     <div class="use-case-icon">🎮</div>
                     <div class="use-case-content">
-                        <h3>게임</h3>
-                        <p>단축키 변환, 연속 입력, 좌표 클릭으로 조작을 편리하게 개선합니다.</p>
+                        <h3>게임 조작 편의</h3>
+                        <p>리니지, 리니지클래식, 아이온2, 디아블로 등 PC 온라인게임에서 복잡한 키 조합을 딸깍 한 번으로 간편하게 입력합니다.</p>
                     </div>
                 </div>
             </div>
@@ -781,10 +826,10 @@
                         <li class="disabled">다중 PC</li>
                     </ul>
                 </div>
-                <div class="sponsor-card featured">
+                <div class="sponsor-card">
                     <div class="sponsor-header">
                         <h3>프로</h3>
-                        <div class="price">₩19,800<span>/월</span></div>
+                        <div class="price">후원제</div>
                     </div>
                     <ul class="sponsor-features">
                         <li>단축키 50개</li>
@@ -795,6 +840,21 @@
                         <li>중복 실행</li>
                         <li>다중 PC 지원</li>
                     </ul>
+                    <div class="pricing-table">
+                        <h4>후원 금액</h4>
+                        <div class="pricing-row">
+                            <span class="period">30일</span>
+                            <span class="amount">₩20,000</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="period">90일</span>
+                            <span class="amount">₩55,000</span>
+                        </div>
+                        <div class="pricing-row">
+                            <span class="period">1년</span>
+                            <span class="amount">₩180,000</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="sponsor-note">
@@ -830,19 +890,22 @@
             </div>
             <div class="support-grid">
                 <div class="support-card">
-                    <div class="support-icon">📢</div>
-                    <h3>네이버 카페</h3>
-                    <p>공지사항, 업데이트 안내,<br>사용자 커뮤니티</p>
-                </div>
-                <div class="support-card">
                     <div class="support-icon" style="color: #FEE500;">💬</div>
                     <h3>카카오톡 오픈채팅</h3>
                     <p>실시간 문의,<br>빠른 답변</p>
+                    <a href="https://open.kakao.com/o/pn51Uxdi" target="_blank" class="btn btn-primary" style="margin-top: 16px; padding: 10px 20px; font-size: 14px;">오픈채팅 입장</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon" style="color: #FEE500;">🙋</div>
+                    <h3>카카오톡 1:1 상담</h3>
+                    <p>개인 문의,<br>상세 안내</p>
+                    <a href="https://open.kakao.com/o/sv57yxdi" target="_blank" class="btn btn-primary" style="margin-top: 16px; padding: 10px 20px; font-size: 14px;">1:1 상담 신청</a>
                 </div>
                 <div class="support-card">
                     <div class="support-icon">🖥️</div>
                     <h3>원격 지원</h3>
                     <p>설정이 어려우시면<br>직접 도와드립니다</p>
+                    <a href="https://github.com/rustdesk/rustdesk/releases/download/1.4.5/rustdesk-1.4.5-x86_64.exe" class="btn btn-primary" style="margin-top: 16px; padding: 10px 20px; font-size: 14px;">원격 프로그램 다운로드</a>
                     <p class="support-sub">
                         프로 회원 월 1회 무료 (15분)<br>
                         추가 지원 후원 ₩5,000
@@ -875,13 +938,14 @@
                         <li><a href="#features">기능</a></li>
                         <li><a href="#sponsor">후원</a></li>
                         <li><a href="#support">지원</a></li>
+                        <li><a href="policy.html" target="_blank">운영정책</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>문의</h4>
                     <ul>
-                        <li><a href="#">네이버 카페</a></li>
-                        <li><a href="#">카카오톡 오픈채팅</a></li>
+                        <li><a href="https://open.kakao.com/o/pn51Uxdi" target="_blank">카카오톡 오픈채팅</a></li>
+                        <li><a href="https://open.kakao.com/o/sv57yxdi" target="_blank">카카오톡 1:1 상담</a></li>
                     </ul>
                 </div>
             </div>

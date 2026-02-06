@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://딸깍.kr/sitemap.xml

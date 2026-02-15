@@ -565,6 +565,32 @@
             color: var(--gray);
         }
 
+        .support-card.disabled-card {
+            opacity: 0.5;
+            filter: grayscale(100%);
+            pointer-events: none;
+            position: relative;
+        }
+
+        .support-card.disabled-card .pause-notice {
+            pointer-events: auto;
+            color: #999;
+            font-size: 13px;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .telegram-qr {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .telegram-qr img {
+            width: 160px;
+            height: 160px;
+            border-radius: 12px;
+        }
+
         /* CTA Section */
         .cta {
             padding: 100px 0;
@@ -890,17 +916,28 @@
                 <p>언제든지 도움을 받으세요</p>
             </div>
             <div class="support-grid">
-                <div class="support-card">
+                <div class="support-card disabled-card">
                     <div class="support-icon" style="color: #FEE500;">💬</div>
                     <h3>카카오톡 오픈채팅</h3>
                     <p>실시간 문의,<br>빠른 답변</p>
                     <a href="https://open.kakao.com/o/pn51Uxdi" target="_blank" class="btn btn-primary" style="margin-top: 16px; padding: 10px 20px; font-size: 14px;">오픈채팅 입장</a>
+                    <p class="pause-notice">임시중지: 텔레그램으로 문의</p>
                 </div>
-                <div class="support-card">
+                <div class="support-card disabled-card">
                     <div class="support-icon" style="color: #FEE500;">🙋</div>
                     <h3>카카오톡 1:1 상담</h3>
                     <p>개인 문의,<br>상세 안내</p>
                     <a href="https://open.kakao.com/o/sv57yxdi" target="_blank" class="btn btn-primary" style="margin-top: 16px; padding: 10px 20px; font-size: 14px;">1:1 상담 신청</a>
+                    <p class="pause-notice">임시중지: 텔레그램으로 문의</p>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon" style="color: #0088cc; font-size: 48px;">✈️</div>
+                    <h3>텔레그램 1:1 문의</h3>
+                    <p>실시간 문의,<br>빠른 답변</p>
+                    <a href="https://t.me/smart_addon" target="_blank" class="btn btn-primary" style="margin-top: 16px; padding: 10px 20px; font-size: 14px; background: #0088cc; color: #fff;">텔레그램 문의하기</a>
+                    <div class="telegram-qr">
+                        <img src="../텔레그램큐알.png" alt="텔레그램 QR코드 @smart_addon">
+                    </div>
                 </div>
                 <div class="support-card">
                     <div class="support-icon">🖥️</div>
@@ -945,8 +982,9 @@
                 <div class="footer-links">
                     <h4>문의</h4>
                     <ul>
-                        <li><a href="https://open.kakao.com/o/pn51Uxdi" target="_blank">카카오톡 오픈채팅</a></li>
-                        <li><a href="https://open.kakao.com/o/sv57yxdi" target="_blank">카카오톡 1:1 상담</a></li>
+                        <li><a href="https://t.me/smart_addon" target="_blank">텔레그램 1:1 문의</a></li>
+                        <li style="opacity: 0.4; pointer-events: none;">카카오톡 오픈채팅 (임시중지)</li>
+                        <li style="opacity: 0.4; pointer-events: none;">카카오톡 1:1 상담 (임시중지)</li>
                     </ul>
                 </div>
             </div>
